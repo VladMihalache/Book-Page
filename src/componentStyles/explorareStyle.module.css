@@ -1,0 +1,35 @@
+.section{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.sectionName{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 225px;
+    max-height: 30px;
+    padding: 5px 5px 10px 10px;
+    font-size: 14px;
+    background-color: #7B0C79;
+    color: white;
+}
+
+.exerciseSection{
+    display: flex;
+    padding: 5px;
+    background-color: #FCF7F9;
+}
+
+.pair p, li{
+    color: #7C0F7A;
+}
+
+.pair input{
+    background-color: #C991BA;
+    color:white
+}
+
