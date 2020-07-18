@@ -5,6 +5,9 @@ export class Explorare extends Component {
     render() {
         return (
             <div className={style.section}>
+                <div className={style.lesson}>
+                    <h2><strong>Lecția 3.</strong> Planul dezvoltat de idei</h2>
+                </div>
                 <div className={style.sectionName}>
                     <h3>Explorare</h3>
                 </div>
