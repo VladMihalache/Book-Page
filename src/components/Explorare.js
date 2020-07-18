@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import style from "../componentStyles/explorareStyle.module.css"
+import style from "../componentStyles/ExplorareStyle.module.css"
 
 export class Explorare extends Component {
     render() {
@@ -11,33 +11,33 @@ export class Explorare extends Component {
                 <div className={style.exerciseSection}>
                     <div className={style.exercise}>
                         <div className={style.exerciseTask}>
-                            <span className={style.nr}>1.</span>
-                            <p>Grupează ideile din rubrica Explorare (pagina 49) într-un plan simplu, urmărind sugestiile din tabel.</p>
+                            <h4><span className={style.nr}>1.</span>Grupează ideile din rubrica Explorare (pagina 49) într-un plan simplu, urmărind sugestiile din tabel.</h4>
                         </div>
                         <div className={style.exerciseBody}>
                             <div className={style.pair}>
-                                <p>Precizează cum începe acțiunea.(Cine? Ce face? Unde? Când?)</p>
-                                <input type="textarea"/>
+                                <p className={style.step}>Precizează cum începe acțiunea.<br></br>(Cine? Ce face? Unde? Când?)</p>
+                                <textarea></textarea>
                             </div>
                             <div className={style.pair}>
-                                <p>Prezintă ce se întâmplă:</p>
-                                <ul>
-                                    <li>cum se declanșează acțiunea;</li>
-                                    <li>cum se desfășoară acțiunea;</li>
-                                    <li>cum sunt depășite complicațiile</li>
-                                </ul>
-                                <input type="textarea"/>
+                                <div className={style.step}>
+                                    <p>Prezintă ce se întâmplă:</p>
+                                    <ul>
+                                        <li><span></span><p>cum se declanșează acțiunea;</p></li>
+                                        <li><span></span><p>cum se desfășoară acțiunea;</p></li>
+                                        <li><span></span><p>cum sunt depășite complicațiile</p></li>
+                                    </ul>
+                                </div>
+                                <textarea></textarea>
                             </div>
                             <div className={style.pair}>
-                                <p>Notează finalul întâmplării.</p>
-                                <input type="textarea"/>
+                                <p className={style.stepTwo}>Notează finalul întâmplării.</p>
+                                <textarea></textarea>
                             </div>
                         </div>
                     </div>
                     <div className={style.exercise}>
                         <div className={style.exerciseTask}>
-                            <span className={style.nr}>2.</span>
-                            <p>Formulează o idee care să completeze, prin detalii, prima idee principală de la exercițiul anterior.</p>
+                            <h4><span className={style.nr}>2.</span>Formulează o idee care să completeze, prin detalii, prima idee principală de la exercițiul anterior.</h4>
                         </div>
                     </div>
                 </div>

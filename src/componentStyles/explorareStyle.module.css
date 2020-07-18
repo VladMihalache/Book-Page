@@ -20,16 +20,116 @@
 
 .exerciseSection{
     display: flex;
+    flex-direction: column;
     padding: 5px;
     background-color: #FCF7F9;
 }
 
-.pair p, li{
+.exerciseTask{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 8px;
+    margin-bottom: 7px;
+    font-weight: 100;
+}
+
+.exerciseTask span{
+    color: #81177F;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.pair{
+    display: flex;
+    margin-bottom: 19px;
     color: #7C0F7A;
 }
 
-.pair input{
+.pair textarea{
+    width: 637px;
+    border: none;
     background-color: #C991BA;
     color:white
 }
 
+.pair textarea:focus{
+    outline:none;
+}
+
+.step{
+    width: 270px;
+    min-height: 42px;
+    text-align: left;
+    margin-right: 30px;
+    padding-left: 25px;
+}
+
+.step ul{
+    padding-left: 0px;
+    margin: 0;
+}
+
+.step li{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.step span{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.step span::after{
+    content: "a";
+    font-size: 1px;
+    padding: 4px 4px 4px 4px;
+    margin-top: 3px;
+    margin-right: 5px;
+    background-color: #C891B9;
+    color: #C891B9;
+}
+
+.stepTwo{
+    width: 270px;
+    min-height: 42px;
+    text-align: left;
+    margin-right: 30px;
+    padding-left: 25px;
+}
+
+@media only screen and (max-width: 768px){
+    .exerciseSection{
+        box-sizing: border-box;
+        max-width: 768px;
+        padding: 4px;
+    }
+    .exerciseTask{
+        padding-left: 0px;
+        max-width: 768px;
+    }
+    .exerciseTask:first-child{
+        margin-bottom: 19px;
+    }
+    .exerciseBody{
+        width: 95%;
+        flex-basis: 95%;
+        margin: 0 auto;
+    }
+    .exercise{
+        flex-direction: row;
+    }
+    .pair{
+        flex-direction: column;
+    }
+
+    .pair textarea{
+        width:100%;
+    }
+    .step{
+        margin-bottom: 20px;
+    }
+}
