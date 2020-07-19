@@ -1,8 +1,9 @@
 .section{
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
     max-width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 15px;
 }
 
 .lesson{
@@ -57,7 +58,7 @@
 }
 
 .pair textarea{
-    width: 637px;
+    width: 677px;
     border: none;
     background-color: #C991BA;
     color:white

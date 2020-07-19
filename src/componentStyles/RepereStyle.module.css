@@ -1,0 +1,49 @@
+.section{
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.sectionName{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 225px;
+    max-height: 30px;
+    padding: 5px 5px 10px 10px;
+    font-size: 14px;
+    background-color: #EB822A;
+    color: white;
+}
+
+.exerciseSection{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background-color: #FCFCF7;
+}
+
+.exerciseTask{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 8px;
+    margin-bottom: 7px;
+    font-weight: 100;
+}
+
+.exerciseTask span{
+    color: #F09D56;
+}
+
+
+@media only screen and (max-width: 768px){
+    .exerciseSection{
+        box-sizing: border-box;
+        max-width: 768px;
+        padding: 4px;
+    }
+}
