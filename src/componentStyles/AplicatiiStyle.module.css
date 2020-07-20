@@ -113,4 +113,11 @@
         max-width: 768px;
         padding: 4px;
     }
+
+    .criterii{
+        min-width: 80%;
+    }
+    .answer{
+        min-width: 10%;
+    }
 }
