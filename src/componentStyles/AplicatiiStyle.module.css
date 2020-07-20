@@ -1,0 +1,116 @@
+.section{
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.sectionName{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 225px;
+    max-height: 30px;
+    padding: 5px 5px 10px 10px;
+    font-size: 14px;
+    background-color: #2981B8;
+    color: white;
+}
+
+.exerciseSection{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background-color: #FAFAFC;
+}
+
+.exerciseTask{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 8px;
+    margin-bottom: 7px;
+    font-weight: 100;
+}
+
+.exerciseTask span{
+    color: #2981B8;
+}
+
+.exerciseBodyTwo{
+    max-width: 918px;
+    margin: 0 auto;
+}
+
+.tableRow{
+    display: flex;
+    width: 100%;
+}
+
+.criterii{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    min-width: 90%;
+    min-height: 30px;
+    padding: 6px;
+    border-right: 2px solid #FAFAFC;
+    border-bottom: 2px solid #FAFAFC;
+    background-color: #DFE9F3;
+}
+
+.answer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    min-width: 5%;
+    min-height: 30px;
+    margin: 0;
+    border-right: 2px solid #FAFAFC;
+    border-bottom: 2px solid #FAFAFC;
+    background-color: #DFE9F3;
+}
+
+.first.criterii{
+    justify-content: center;
+    text-align: center;
+    background-color: #89B5D4;
+    color: white;
+}
+
+.first.answer{
+    justify-content: center;
+    text-align: center;
+    background-color: #89B5D4;
+    color: white;
+}
+
+.checkbox{
+    display:flex;
+    cursor: pointer;
+    -webkit-appearance: none;
+    transition:0.5s;
+    position:relative;
+  }
+  
+  .checkbox:focus{
+    outline:none;
+  }
+  
+  .checkbox:checked{
+    background-image: url("../ImageAssets/bif.png");
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+@media only screen and (max-width: 768px){
+    .exerciseSection{
+        box-sizing: border-box;
+        max-width: 768px;
+        padding: 4px;
+    }
+}
