@@ -6,15 +6,18 @@
     margin-bottom: 15px;
 }
 
+/* ------------  Lesson Title  ------------ */
+
 .lesson{
     margin-bottom: 20px;
-    font-weight: 600;
     color: #F0A15F
 }
 
 .lesson span{
     font-weight: bold;
 }
+
+/* ------------  Section Name  ------------ */
 
 .sectionName{
     box-sizing: border-box;
@@ -29,6 +32,8 @@
     color: white;
 }
 
+/* ------------  Exercise Section  ------------ */
+
 .exerciseSection{
     display: flex;
     flex-direction: column;
@@ -36,20 +41,26 @@
     background-color: #FCF7F9;
 }
 
+/* ------------  Tasks/Indications  ------------ */
+
 .exerciseTask{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding-left: 8px;
     margin-bottom: 7px;
-    font-weight: 100;
+}
+
+.exerciseTask h4{
+    font-weight: 400;
 }
 
 .exerciseTask span{
+    font-weight: 700;
     color: #81177F;
-    font-weight: bold;
 }
 
+/* ------------  step - <textarea> pairs  ------------ */
 .pair{
     display: flex;
     margin-bottom: 19px;
@@ -59,6 +70,7 @@
 .pair textarea{
     width: 677px;
     border: none;
+    resize: none;
     background-color: #C991BA;
     color:white
 }
@@ -70,9 +82,9 @@
 .step{
     width: 270px;
     min-height: 42px;
-    text-align: left;
     margin-right: 30px;
     padding-left: 25px;
+    text-align: left;
 }
 
 .step ul{
@@ -95,10 +107,10 @@
 
 .step span::after{
     content: "a";
-    font-size: 1px;
     padding: 4px 4px 4px 4px;
     margin-top: 3px;
     margin-right: 5px;
+    font-size: 1px;
     background-color: #C891B9;
     color: #C891B9;
 }
@@ -106,10 +118,13 @@
 .stepTwo{
     width: 270px;
     min-height: 42px;
-    text-align: left;
     margin-right: 30px;
     padding-left: 25px;
+    text-align: left;
 }
+
+
+/* --------------------  Media Queries  -------------------- */
 
 @media only screen and (max-width: 768px){
     .exerciseSection{
@@ -118,15 +133,14 @@
         padding: 4px;
     }
     .exerciseTask{
-        padding-left: 0px;
         max-width: 768px;
+        padding-left: 0px;
     }
     .exerciseTask:first-child{
         margin-bottom: 19px;
     }
     .exerciseBody{
         width: 95%;
-        flex-basis: 95%;
         margin: 0 auto;
     }
     .exercise{

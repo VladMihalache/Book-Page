@@ -6,18 +6,22 @@
     margin-bottom: 15px;
 }
 
+/* ------------  Section Name  ------------ */
+
 .sectionName{
     box-sizing: border-box;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
     max-width: 225px;
     max-height: 30px;
     padding: 5px 5px 10px 10px;
+    align-items: center;
     font-size: 14px;
     background-color: #2981B8;
     color: white;
 }
+
+/* ------------  Exercise Section  ------------ */
 
 .exerciseSection{
     display: flex;
@@ -26,24 +30,177 @@
     background-color: #FAFAFC;
 }
 
+/* ------------  Tasks/Indications  ------------ */
+
 .exerciseTask{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding-left: 8px;
     margin-bottom: 7px;
-    font-weight: 100;
+}
+
+.exerciseTask h4{
+    font-weight: 400;
 }
 
 .exerciseTask span{
+    font-weight: 700;
     color: #2981B8;
 }
+
+/* --------------------  Exercise 1  -------------------- */
+
+.exerciseBodyOne{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ------------  step - <textarea> pairs  ------------ */
+
+.pair{
+    display: flex;
+    width: 100%;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+
+textarea{
+    resize: none;
+}
+
+.pair textarea:focus{
+    outline:none;
+}
+
+.mainBoxes{
+    display: flex;
+    min-height: 107px;
+}
+
+.mainBoxes span{
+    color: #2982B9;
+}
+
+.blueBox{
+    min-width: 387px;
+    max-width: 450px;
+}
+
+/* ------------  first pairs  ------------ */
+
+.firstPair{
+    flex-direction: column;
+}
+
+.topLeft{
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: auto;
+    width: 387px;
+    padding: 5px 10px;
+    background-color: #F8C686;
+    color: white;
+}
+
+.topRight{
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: auto;
+    width: 387px;
+    padding: 5px 10px;
+    background-color: #F8C686;
+    color: white;
+}
+
+/* ------------  pair left side  ------------ */
+
+.leftSide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.orangeBox{
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 137px;
+    padding: 7px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: #F8C686;
+    color: white;
+}
+
+.orangeBox::after{
+    content: "";
+    position: absolute;
+    top: 90px;
+    z-index: 2;
+	width: 0;
+	height: 0;
+	border-left: 26px solid transparent;
+	border-right: 26px solid transparent;
+	border-top: 28px solid #2981B8;
+}
+
+.orangeBoxLast{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 137px;
+    padding: 20px;
+    text-align: center;
+    background-color: #F8C686;
+    color: white;
+}
+
+/* ------------  pair right side  ------------ */
+
+.rightSide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blueBox{
+    box-sizing: border-box;
+    border: none;
+    width: 367px;
+    padding: 5px;
+    padding-left: 7px;
+    background-color: #DFE9F2;
+}
+
+/* --------------------  Exercise 2  -------------------- */
 
 .exerciseBodyTwo{
     max-width: 918px;
     margin: 0 auto;
 }
 
+/* ------------  first row  ------------ */
+
+.first.criterii{
+    justify-content: center;
+    text-align: center;
+    background-color: #89B5D4;
+    color: white;
+}
+
+.first.answer{
+    justify-content: center;
+    text-align: center;
+    background-color: #89B5D4;
+    color: white;
+}
+
+/* ------------  general row styles  ------------ */
 .tableRow{
     display: flex;
     width: 100%;
@@ -62,10 +219,10 @@
 }
 
 .answer{
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
     min-width: 5%;
     min-height: 30px;
     margin: 0;
@@ -74,38 +231,26 @@
     background-color: #DFE9F3;
 }
 
-.first.criterii{
-    justify-content: center;
-    text-align: center;
-    background-color: #89B5D4;
-    color: white;
-}
-
-.first.answer{
-    justify-content: center;
-    text-align: center;
-    background-color: #89B5D4;
-    color: white;
-}
-
 .checkbox{
     display:flex;
     cursor: pointer;
     -webkit-appearance: none;
     transition:0.5s;
     position:relative;
-  }
+}
   
-  .checkbox:focus{
+.checkbox:focus{
     outline:none;
-  }
+}
   
-  .checkbox:checked{
+.checkbox:checked{
     background-image: url("../ImageAssets/bif.png");
     background-size: 25px;
     background-position: center;
     background-repeat: no-repeat;
-  }
+}
+
+/* --------------------  Media Queries  -------------------- */
 
 @media only screen and (max-width: 768px){
     .exerciseSection{
@@ -114,10 +259,104 @@
         padding: 4px;
     }
 
+    /* ------------  Exercise 1  ------------ */
+    .topLeft{
+        text-align: center;
+        min-height: 30px;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .topRight{
+        text-align: center;
+        min-height: 30px;
+        width: 100%;
+        margin-bottom: 17px;
+    }
+
+    .pair{
+        margin-left: 0;
+    }
+    
+    .leftSide{
+        width: 50%;
+        margin-right: 20px;
+    }
+
+    .rightSide{
+        width: 50%;
+        margin-top: auto;
+    
+    }
+    
+    .mainBoxes{
+        flex-direction: column;
+    }
+
+    .orangeBox{
+        width: 100%;
+        padding: 1px;
+    }
+
+    .orangeBox::after{
+        display: none;
+    }
+    
+    .orangeBoxLast{
+        width: 100%;
+        padding: 1px;
+    }
+
+    .rightSide .blueBox{
+        margin-top: auto;
+    }
+
+    .blueBox{
+        min-width: 0px;
+        min-height: 94px;
+    }
+
+    /* ------------  Exercise 2  ------------ */
+
     .criterii{
         min-width: 80%;
     }
+
     .answer{
         min-width: 10%;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    .topLeft{
+        text-align: center;
+        min-height: 30px;
+        width: 100%;
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+    
+    .topRight{
+        text-align: center;
+        min-height: 30px;
+        width: 100%;
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+
+    .leftSide{
+        max-width: 170px;
+        margin-right: 20px;
+    }
+
+    .rightSide{
+        max-width: 170px;
+        margin-top: auto;
+    
+    }
+
+    .blueBox{
+        max-width: 180px;
+        min-height: 190px;
     }
 }

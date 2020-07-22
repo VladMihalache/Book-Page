@@ -6,6 +6,8 @@
     margin-bottom: 15px;
 }
 
+/* ------------  Section Name  ------------ */
+
 .sectionName{
     box-sizing: border-box;
     display: flex;
@@ -19,6 +21,9 @@
     color: white;
 }
 
+/* ------------  Exercise Section  ------------ */
+
+
 .exerciseSection{
     display: flex;
     flex-direction: column;
@@ -26,6 +31,7 @@
     background-color: #FCFCF7;
 }
 
+/* ------------  Tasks/Indications  ------------ */
 .exerciseTask{
     display: flex;
     justify-content: flex-start;
@@ -34,6 +40,12 @@
     margin-bottom: 7px;
     font-weight: 100;
 }
+
+.exerciseTask h4{
+    font-weight: 400;
+}
+
+/* --------------------  Media Queries  -------------------- */
 
 @media only screen and (max-width: 768px){
     .exerciseSection{

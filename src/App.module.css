@@ -1,5 +1,6 @@
 .app {
-  background-color: white;
   max-width: 1200px;
   margin: 0 auto;
+  background-color: white;
+  overflow: hidden;
 }
