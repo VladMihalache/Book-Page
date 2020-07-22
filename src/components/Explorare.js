@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import style from "../componentStyles/ExplorareStyle.module.css"
+import style from "./ExplorareStyle.module.css"
 
 export class Explorare extends Component {
     render() {

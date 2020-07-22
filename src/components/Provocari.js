@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import style from "../componentStyles/ProvocariStyle.module.css"
+import style from "./ProvocariStyle.module.css"
 
 export class Provocari extends Component {
     render() {

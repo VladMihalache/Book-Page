@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import style from "../componentStyles/RepereStyle.module.css"
+import style from "./RepereStyle.module.css"
 
 
 export class Repere extends Component {
