@@ -132,27 +132,34 @@
         max-width: 768px;
         padding: 4px;
     }
+
     .exerciseTask{
         max-width: 768px;
         padding-left: 0px;
     }
+
     .exerciseTask:first-child{
         margin-bottom: 19px;
     }
+
     .exerciseBody{
         width: 95%;
         margin: 0 auto;
     }
+
     .exercise{
         flex-direction: row;
     }
+
     .pair{
         flex-direction: column;
     }
 
     .pair textarea{
         width:100%;
+        min-height: 50px;
     }
+    
     .step{
         margin-bottom: 20px;
     }

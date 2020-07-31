@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import  styles from './App.module.css';
+import styles from './App.module.css'
 import Header from './components/Header'
 import Explorare from './components/Explorare'
 import Repere from './components/Repere'
